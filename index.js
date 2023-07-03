@@ -1,6 +1,7 @@
-require("dotenv").config();
-const simpleGit = require("simple-git");
+import dotenv from "dotenv";
+import simpleGit from "simple-git";
 
+dotenv.config();
 const git = simpleGit();
 
 async function syncFilesToGit() {
